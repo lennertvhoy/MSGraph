@@ -1,0 +1,49 @@
+#separator:tab
+#html:true
+#tags:column:6
+
+Wat is Microsoft Graph?	Een API die toegang geeft tot Microsoft 365 data en functionaliteit voor automatisering van systeembeheerdertaken.
+
+Wat is een API?	Een interface die definieert hoe software met elkaar kan communiceren, vergelijkbaar met een menu in een restaurant.
+
+Wat zijn de belangrijkste concepten van Microsoft Graph?	1. Endpoints (URLs voor data)
+2. Permissions (toegangsrechten)
+3. Authentication (identificatie)
+
+Wat is een endpoint in Microsoft Graph?	Een specifieke URL waar je data kunt ophalen of wijzigen, bijvoorbeeld /users of /groups.
+
+Wat zijn permissions in Microsoft Graph?	Specifieke rechten die bepalen welke data je kunt zien of wijzigen, bijvoorbeeld User.Read of Group.ReadWrite.All.
+
+Wat is authentication in Microsoft Graph?	Het proces waarbij je jezelf identificeert voordat je de API kunt gebruiken, via app registratie of interactieve login.
+
+Wat zijn de voordelen van Microsoft Graph voor systeembeheerders?	1. Automatisering van taken
+2. Verhoogde efficiëntie
+3. Integratie met andere systemen
+4. Verbeterde beveiliging
+
+Hoe kun je een lijst van alle gebruikers ophalen met PowerShell?	Connect-MgGraph
+Get-MgUser -All
+
+Hoe kun je een lijst van alle gebruikers ophalen met Python?	from msgraph.core import GraphClient
+client = get_graph_client()
+response = client.get('/users')
+return response.json()
+
+Wat is het verschil tussen handmatig werken en Microsoft Graph?	Handmatig: via Azure portal klikken
+Microsoft Graph: geautomatiseerd via scripts
+
+Wat zijn de belangrijkste taken die je kunt automatiseren met Microsoft Graph?	Gebruikers beheren
+Groepen beheren
+Licenties toewijzen
+Rapporten genereren
+Beveiliging configureren
+
+Wat is het doel van Microsoft Graph?	Het automatiseren van systeembeheerdertaken door programmatische toegang tot Microsoft 365 data en functionaliteit.
+
+Wat is het verschil tussen een API en een gewone website?	Een API is gestructureerd voor programmatische toegang, terwijl een website is ontworpen voor menselijke interactie.
+
+Wat is het belang van endpoints in Microsoft Graph?	Endpoints bepalen welke data en functionaliteit beschikbaar zijn en hoe je er toegang toe krijgt.
+
+Wat is het belang van permissions in Microsoft Graph?	Permissions bepalen welke acties je mag uitvoeren en welke data je mag zien of wijzigen.
+
+Wat is het belang van authentication in Microsoft Graph?	Authentication zorgt ervoor dat alleen geautoriseerde gebruikers en applicaties toegang krijgen tot de API. 
