@@ -2,6 +2,86 @@
 
 In deze module gaan we kijken naar de toekomst van de Microsoft Graph API. We behandelen nieuwe features, trends, en hoe we ons kunnen voorbereiden op toekomstige ontwikkelingen.
 
+## Repository Setup
+
+### WSL Installatie en Setup
+
+1. Open PowerShell als administrator en voer het volgende commando uit:
+```powershell
+wsl --install
+```
+
+2. Herstart je computer na de installatie.
+
+3. Open WSL en update het systeem:
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### Git Setup in WSL
+
+1. Installeer Git als het nog niet geïnstalleerd is:
+```bash
+sudo apt install git
+```
+
+2. Configureer Git met je gegevens:
+```bash
+git config --global user.name "Jouw Naam"
+git config --global user.email "jouw.email@voorbeeld.com"
+```
+
+### Repository Initialisatie
+
+1. Clone de repository (voor een bestaande repo):
+```bash
+git clone https://github.com/gebruiker/repository.git
+cd repository
+```
+
+2. Of voor een nieuwe repository:
+```bash
+mkdir mijn-project
+cd mijn-project
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/gebruiker/repository.git
+git push -u origin main
+```
+
+### Werken met Git
+
+1. Status controleren:
+```bash
+git status
+```
+
+2. Wijzigingen toevoegen:
+```bash
+git add .  # Alle wijzigingen
+# of
+git add bestandsnaam  # Specifiek bestand
+```
+
+3. Wijzigingen committen:
+```bash
+git commit -m "Beschrijving van de wijzigingen"
+```
+
+4. Wijzigingen pushen:
+```bash
+git push  # Als branch al is ingesteld
+# of
+git push -u origin main  # Eerste keer pushen
+```
+
+5. Updates ophalen:
+```bash
+git pull
+```
+
 ## Module Overzicht
 
 Deze module bestaat uit vijf hoofdonderdelen:
